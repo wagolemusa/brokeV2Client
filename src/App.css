@@ -1,0 +1,217 @@
+.proStyle {
+    /* font-size: ; */
+    font-size: 18px;
+}
+
+.icons {
+    font-size: 35px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+}
+.icons1 {
+    font-size: 25px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    color: rgb(84, 190, 182);
+}
+
+.input {
+    transition: border 0.2s ease-in-out;
+    min-width: 200px
+}
+
+.input:focus+.label,
+.input:active+.label,
+.input.filled+.label {
+    font-size: .75rem;
+    transition: all 0.2s ease-out;
+    top: -0.3rem;
+    color: #6b7280;
+}
+
+.label {
+    transition: all 0.2s ease-out;
+    top: 0.4rem;
+    left: 0;
+}
+
+.banner {
+    background: url('https://s1.1zoom.me/b6058/448/Dogs_Svetlana_Shelemeteva_Hug_Little_girls_568770_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.homesection {
+    background: url('../src/asserts/h1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+/* .modal {
+
+} */
+
+.cach img{
+    width: 900px;
+    /* height: 900px; */
+}
+
+.showimg  img{
+    width: 830px;
+    height: 400px;
+}
+/* .modal {
+    height: 900px;
+    overflow: auto;
+} */
+
+.bg-card {
+
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80vw;
+    border-radius: 40px;
+    margin: 64px auto;
+}
+.imgcard img {
+    
+    width: 70px;
+    text-align: center;
+    /* padding-left: 50px; */
+    padding-right: 10px;
+    /* padding-top: 50px; */
+    
+}
+.homecard {
+    margin: -5rem 0px 0px 6rem;
+}
+.hometitle{
+    margin: -3rem 0px 0px 6rem;
+
+}
+.sider img {
+    width: 30px;
+    float: right;
+    /* padding-right: 90px; */
+}
+.login a {
+    padding-left: 980px;
+
+}
+.sell{
+    font-size: 22px;
+    padding: 30px;
+    font-weight: 600;
+    
+    
+}
+/* .footer button {
+    padding-left: 50px;
+} */
+.suc {
+  
+    border-radius: 0.5rem;
+    color: #69F0AE;
+}
+.scoll{
+    /* background-color: rgb(100 116 139/.5)!important; */
+    height: 34.375rem!important;
+    /* width: 1.375rem!important; */
+}
+.cardpost {
+    width: 500px;
+}
+.showimage img{
+    width: 100px;
+    height: 100px;
+}
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    /* justify-content: right; */
+    float: left;
+}
+
+.paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    cursor: pointer;
+}
+.paginationBttns a:hover{
+    color: white;
+    background-color: #38bdf8;
+}
+
+.paginationActive a {
+    color: white;
+    background-color: #38bdf8;
+}
+
+.home img{
+    height: 230px;
+}
+
+@media only screen and (max-width: 640px) {
+    .banner {
+        display: none;
+    }
+
+    .showimg  img{
+        width: 830px;
+        height: 250px;
+    }
+    .homecard{
+        margin: -3rem 0px 3px 2rem;
+    }
+    .hometitle{
+        margin: -0rem 0px 5px 2rem;
+    
+    }
+    .bg-card  h2{
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    .homesection h1{
+        font-size: 40px;
+        padding: 15px;
+    }
+    .homesection p{
+        font-size: 18px;
+    }
+    .cach img{
+        width:1000px;
+        /* height: 900px; */
+        margin: -2rem 0px 3px 2rem;
+    }
+    .footer h1{
+        font-size: 20px;
+       
+     }
+     .caerd2 h1{
+        font-size: 20px;
+       
+     }
+
+     .caerd2{
+        padding-top: 50px;
+        padding-bottom: 20px;
+     }
+     .login a{
+        padding-left: 70px;
+        cursor: pointer;
+        padding-bottom: 50px;
+    }
+    .care {
+        font-size: 12px;
+    }
+    
+}

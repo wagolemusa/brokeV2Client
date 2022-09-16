@@ -58,8 +58,9 @@ const Relatd = () => {
 
     
     useEffect(() => {  
-    }, getAlldata(),[]);
-    console.log(reated)
+        getAlldata()
+    },[]);
+    
 
     const changePage = ({ selected }) => {
         setPageCount(selected)

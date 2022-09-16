@@ -49,9 +49,9 @@ function Buyshell() {
 
     const  FormTitle = ["Let us know you!", "Provide Business Active Contacts", "Let us know where you come from!"];
         const PageDisplay = () => {
-            if(page == 0){
+            if(page === 0){
                 return <Signup formData={formData} setFormData={setFormData}/>;
-            }else if (page == 1){
+            }else if (page === 1){
                 return <Personal formData={formData} setFormData={setFormData}/>;
             }else {
                 return <Location formData={formData} setFormData={setFormData}/>;
@@ -62,6 +62,21 @@ function Buyshell() {
        <section className='pt-5 pb-32'>
            <div class="pt-10 relative flex flex-col space-y-10 justify-center items-center">
             
+           {!error &&
+                        <div className='suc'>
+                            {success ? success : ""}
+                        </div>}
+
+                    {!success && Array.isArray(error) ? error.map((item, i) => (
+                        <div class="notice bg-red-100 rounded-lg px-6 mb-4 text-base text-red-600" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 key={i}> {item} </h4>
+                        </div>
+                    )) : <p className="rounded-lg px-6 mb-4 text-base text-yellow-600" role="alert">{error} </p>
+                    }
+
                 <div class="md:shadow-lg shadow-none rounded p-6 w-96 bg-white" >
                 <h1 className='text-slate-500 font-semibold'>{FormTitle[page]}</h1>
                 
@@ -69,7 +84,7 @@ function Buyshell() {
                  
                         <div className='footer'>
                         <button className="bg-white hover:bg-gray-100 text-slate-500 font-semibold py-1 px-4 border rounded-full border-teal-400  shadow"
-                                disabled={page == 0}
+                                disabled={page === 0}
                                 onClick={() => {
                                     setPage((currPage) => currPage - 1);
                                 }}
@@ -90,7 +105,7 @@ function Buyshell() {
                                     
                                 }}
                             >
-                                {page == FormTitle.length - 1 ? "Submit" : "Next"}
+                                {page === FormTitle.length - 1 ? "Submit" : "Next"}
                         </button>
                         </div>
                 </div>

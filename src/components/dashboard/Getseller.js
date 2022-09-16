@@ -5,12 +5,6 @@ import axios from "axios";
 let token = localStorage.getItem('token')
 
 const Getseller = () => {
-const [firstname, setFirstname] = useState(null);
-const [lastname, setLastname] = useState(null);
-const [email, setEmail] = useState(null);
-const [phone, setPhone] = useState(null);
-const [country, setCountry] = useState(null);
-const [city, setCity] = useState(null);
 
 const [shell, setShell] = useState([]);
 
@@ -87,28 +81,28 @@ console.log(shell);
             <tbody>
               {
             
-              shell?.map((sell) => { 
+              shell.map((sell) => { 
                 return (
              
                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700" key={sell._id}>
                
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                 {sell.sellers.firstname}
+                 {sell.firstname}
                 </th>
                 <td class="py-4 px-6">
-                  {sell.sellers.lastname}
+                  {sell.lastname}
                 </td>
                 <td class="py-4 px-6">
-                  {sell.sellers.phone}
+                  {sell.phone}
                 </td>
                 <td class="py-4 px-6">
-                  {sell.sellers.email}
+                  {sell.email}
                 </td>
                 <td class="py-4 px-6">
-                  {sell.sellers.country}
+                  {sell.country}
                 </td>
                 <td class="py-4 px-6">
-                  {sell.sellers.city}
+                  {sell.city}
                 </td>
                 <td class="py-4 px-6">
                 {new Date(sell.createdAt).toDateString()}

@@ -4,12 +4,10 @@ import Buy from './home/Buy'
 import ReactPaginate from "react-paginate"
 
 import { Link } from 'react-router-dom'
-let token = localStorage.getItem('token')
+// let token = localStorage.getItem('token')
 
 const Relatd = () => {
-    const [currentItem, setCurrentItem] = useState()
     const [pageCount, setPageCount ] = useState(0);
-    const [itemOffset, setItemOffset] = useState(0);
 
     const itemsPerPage = 4;
     const pagesVisted = pageCount * itemsPerPage;
@@ -24,7 +22,7 @@ const Relatd = () => {
                 <>
              <div class="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <Link to={`/show/${home._id}`}>
-                <img src={home.postPictures[0].img} class="p-2 rounded-t-lg" alt="product image" />
+                <img src={home.postPictures[0].img} class="p-2 rounded-t-lg" alt="" />
             </Link>
             <div class="px-5 pb-5">
             <Link to={`/show/${home._id}`}>

@@ -15,7 +15,7 @@ const Side = () => {
             <div className={`${open ? "w-72" : "w-20"} duration-500 h-screen bg-slate-100`}>
             
             <img src={r} classNaame="absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple ${!open }
-            border-2 rounded-full pr-11" onClick={() => setOpen(!open)}/>
+            border-2 rounded-full pr-11" onClick={() => setOpen(!open)} alt="" />
             <ul className={`pt-8 `}>
 
             <li className="text-xl font-semibold flex items-center gap-x-4 cursor p-5 hover:bg-teal-300  hover:text-white rounded-md">

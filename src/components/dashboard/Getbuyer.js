@@ -5,12 +5,12 @@ import axios from "axios";
 let token = localStorage.getItem('token')
 
 const Getbuyer = () => {
-    const [firstname, setFirstname] = useState(null);
-    const [lastname, setLastname] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [phone, setPhone] = useState(null);
-    const [country, setCountry] = useState(null);
-    const [city, setCity] = useState(null);
+    // const [firstname, setFirstname] = useState(null);
+    // const [lastname, setLastname] = useState(null);
+    // const [email, setEmail] = useState(null);
+    // const [phone, setPhone] = useState(null);
+    // const [country, setCountry] = useState(null);
+    // const [city, setCity] = useState(null);
     const [createdAt, setCreatedAt] = useState(null);
 
     const [buyer, setBuyer] = useState([]);
@@ -24,12 +24,12 @@ const Getbuyer = () => {
             }
         })
             .then((res) => {
-                setFirstname(res.data.buy)
-                setLastname(res.data.buy)
-                setEmail(res.data.buy)
-                setPhone(res.data.buy)
-                setCountry(res.data.buy)
-                setCity(res.data.buy)
+                // setFirstname(res.data.buy)
+                // setLastname(res.data.buy)
+                // setEmail(res.data.buy)
+                // setPhone(res.data.buy)
+                // setCountry(res.data.buy)
+                // setCity(res.data.buy)
                 setCreatedAt(res.data.buy)
 
                 const mybuyer = res.data.buy;
@@ -96,7 +96,7 @@ const Getbuyer = () => {
                         </thead>
                         <tbody>
 
-                            {buyer.firstname}
+                            
                             {
 
                             buyer.map((buys) => {
@@ -106,22 +106,22 @@ const Getbuyer = () => {
 
                                  
                                             <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                {buys.buyers.firstname}
+                                                {buys.firstname}
                                             </th>
                                             <td class="py-4 px-6">
-                                                {buys.buyers.lastname}
+                                                {buys.lastname}
                                             </td>
                                             <td class="py-4 px-6">
-                                                {buys.buyers.phone}
+                                                {buys.phone}
                                             </td>
                                             <td class="py-4 px-6">
-                                                {buys.buyers.email}
+                                                {buys.email}
                                             </td>
                                             <td class="py-4 px-6">
-                                                {buys.buyers.country}
+                                                {buys.country}
                                             </td>
                                             <td class="py-4 px-6">
-                                                {buys.buyers.city}
+                                                {buys.city}
                                             </td>
                                             <td class="py-4 px-6">
                                                 

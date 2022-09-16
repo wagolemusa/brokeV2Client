@@ -55,7 +55,7 @@ const Trust = () => {
 
             </div>
             <div className='cach'>
-                <img src={ys} class="p-2 rounded-t-l pt-28 w-30" alt="product image" />
+                <img src={ys} class="p-2 rounded-t-l pt-28 w-30" alt="" />
             </div>
             </div>
             </div>

@@ -13,7 +13,6 @@ import Nav from './components/navbar/Nav';
 import Getbuyer from './components/dashboard/Getbuyer';
 import Getseller from './components/dashboard/Getseller';
 import Buyshell from './components/buy/Buyshell';
-import Sellshell from './components/sell/Sellshell';
 import Dashoard from './components/dashboard/Dashoard';
 import Create from './components/dashboard/Create';
 import Post from './components/dashboard/Post';
@@ -31,8 +30,8 @@ function App() {
     if(!auth.authenticate){
         dispatch(isUserLogin());
     }
-    // dispatch(getInitialData());
-},[]);
+
+});
 
   return (
     <div className="App">

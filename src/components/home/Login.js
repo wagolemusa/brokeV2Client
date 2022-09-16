@@ -1,7 +1,5 @@
-import React, { useState, useRef, useContext, useEffect } from "react";
-import { useDispatch, useSelector } from 'react-redux';
-import { Navigate } from 'react-router-dom';
-import { login } from "../../actions/authActions";
+import React, { useState, useRef } from "react";
+
 import axios from 'axios';
 
 const Login = () => {

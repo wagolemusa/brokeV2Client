@@ -3,7 +3,6 @@ import log from "../../../src/asserts/log.png"
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import NavLinks from "./NavLinks";
-import Buy from '../home/Buy';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

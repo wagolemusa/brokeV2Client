@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
-import Navbar from "../navbar/Navbar";
-import Button from "../Button";
+
 import Footer from "../footer/Footer"
 import Cards from "../Cards";
 import Trust from "./Trust";
@@ -10,7 +9,6 @@ import xx from '../../asserts/xx.png'
 import xc from '../../asserts/xc.png'
 import Buy from "./Buy";
 import { Link } from 'react-router-dom'
-import { matchRoutes } from "react-router-dom";
 let token = localStorage.getItem('token')
 
 const Home = () => {

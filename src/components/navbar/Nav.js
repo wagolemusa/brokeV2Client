@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import Button from "../Button";
 import log from "../../../src/asserts/log.png"
 import Sellshell from "../sell/Sellshell";
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 const Nav = () => {
   const auth = useSelector(state => state.auth)
 
-  const dispatch = useDispatch();
 
   const logout = () => {
     window.localStorage.clear();

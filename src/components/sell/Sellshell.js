@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Signup from './Signup';
 import Location from './Location';
 import Personal from './Personal';
-import Footer from '../footer/Footer';
 import axios from 'axios';
 
 
@@ -52,9 +51,9 @@ function Sellshell() {
 
     const  FormTitle = ["Let us know you!", "Provide Business Active Contacts", "Let us know where you come from!"];
         const PageDisplay = () => {
-            if(page == 0){
+            if(page === 0){
                 return <Signup formData={formData} setFormData={setFormData}/>;
-            }else if (page == 1){
+            }else if (page === 1){
                 return <Personal formData={formData} setFormData={setFormData}/>;
             }else {
                 return <Location formData={formData} setFormData={setFormData}/>;
@@ -85,7 +84,7 @@ function Sellshell() {
 
                         <div className='footer'>
                         <button className="bg-white hover:bg-gray-100 text-slate-500 font-semibold py-1 px-4 border rounded-full border-teal-400  shadow"
-                                disabled={page == 0}
+                                disabled={page === 0}
                                 onClick={() => {
                                     setPage((currPage) => currPage - 1);
                                 }}
@@ -107,7 +106,7 @@ function Sellshell() {
                                     
                                 }}
                             >
-                                {page == FormTitle.length - 1 ? "Submit" : "Next"}
+                                {page === FormTitle.length - 1 ? "Submit" : "Next"}
                         </button>
                         </div>
                 </div>

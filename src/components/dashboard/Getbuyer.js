@@ -11,7 +11,7 @@ const Getbuyer = () => {
     // const [phone, setPhone] = useState(null);
     // const [country, setCountry] = useState(null);
     // const [city, setCity] = useState(null);
-    const [createdAt, setCreatedAt] = useState(null);
+    // const [createdAt, setCreatedAt] = useState(null);
 
     const [buyer, setBuyer] = useState([]);
 
@@ -30,7 +30,7 @@ const Getbuyer = () => {
                 // setPhone(res.data.buy)
                 // setCountry(res.data.buy)
                 // setCity(res.data.buy)
-                setCreatedAt(res.data.buy)
+                // setCreatedAt(res.data.buy)
 
                 const mybuyer = res.data.buy;
                 setBuyer(mybuyer);
